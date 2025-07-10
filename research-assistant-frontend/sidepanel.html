@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Research Assistant</h2>
+        </div>
+
+        <label for="operation">Select an operation:</label>
+        <select name="operation" id="operation">
+            <optgroup label="Text Editing">
+                <option value="rewrite">Rewrite</option>
+                <option value="expand">Expand</option>
+                <option value="shorten">Shorten</option>
+                <option value="tone_change">Change Tone</option>
+            </optgroup>
+            <optgroup label="Text Analysis">
+                <option value="summarize">Summarize</option>
+                <option value="summarize_bullets">Summarize as Bullets</option>
+                <option value="extract_keywords">Extract Keywords</option>
+                <option value="generate_outline">Generate Outline</option>
+                <option value="generate_title">Generate Title</option>
+                <option value="question">Generate Questions</option>
+            </optgroup>
+            <optgroup label="Grammar Tools">
+                <option value="check_grammar">Check Grammar</option>
+                <option value="synonyms">Find Synonyms</option>
+                <option value="antonyms">Find Antonyms</option>
+                <option value="paraphrase">Paraphrase</option>
+                <option value="correct_punctuation">Correct Punctuation</option>
+                <option value="simplify_text">Simplify Text</option>
+                <option value="expand_phrases">Expand Phrases</option>
+                <option value="verb_conjugation">Verb Conjugation</option>
+            </optgroup>
+            <optgroup label="Technical">
+                <option value="suggest">Suggest Related Topics</option>
+                <option value="code_explain">Explain Code</option>
+                <option value="quary_explain">Explain Query</option>
+                <option value="code_comment">Add Comments to Code</option>
+                <option value="code_debug">Debug Code</option>
+                <option value="convert_to_pseudocode">Convert to Pseudocode</option>
+                <option value="complexity_analysis">Analyze Time & Space Complexity</option>
+                <option value="generate_test_cases">Generate Test Cases</option>
+                <option value="real_application">Application</option>
+            </optgroup>
+            <optgroup label="Translation">
+                <option value="translate_bengali">Translate to Bengali</option>
+                <option value="translate_hindi">Translate to Hindi</option>
+                <option value="translate_english">Translate to English</option>
+            </optgroup>
+            <optgroup label="AI Insights">
+                <option value="sentiment_analysis">Sentiment Analysis</option>
+                <option value="readability_score">Readability Score</option>
+                <option value="detect_language">Detect Language</option>
+                <option value="keyword_density">Keyword Density</option>
+            </optgroup>
+        </select>
+
+
+        <div class="actions">
+            <button id="operationBtn">Operation</button>
+        </div>
+
+        <div id="results"></div>
+
+        <div class="notes">
+            <h3>Research Notes</h3>
+            <textarea id="notes" placeholder="Take notes here"></textarea>
+            <button id="saveNotesBtn">Save Notes</button>
+        </div>
+    </div>
+
+    <script src="sidepanel.js"></script>
+</body>
+
+</html>
